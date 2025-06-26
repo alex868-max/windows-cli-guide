@@ -33,7 +33,7 @@ exit          # Fecha o terminal
 </details>
 
 <p align="center">
-  <img src="./img/cmd-comandos.png" alt="Comandos CMD" width="400">
+  <img src="./img/cmd-comandos.png" alt="Comandos CMD" width="250">
 </p>
 
 ---
@@ -73,7 +73,7 @@ echo %mensagem%
 💡 *Use `set /p variavel=texto` para receber input do usuário.*
 
 <p align="left">
-  <img src="https://user-images.githubusercontent.com/74038190/212744275-c56a72c2-50b1-45e2-a693-d19d40357766.gif" width="200">
+  <img src="https://user-images.githubusercontent.com/74038190/212744275-c56a72c2-50b1-45e2-a693-d19d40357766.gif" width="150">
 </p>
 
 ---
