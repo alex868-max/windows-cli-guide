@@ -153,7 +153,6 @@ choco uninstall nome
 | --------------------------------- | ------------------------- |
 | <img src="./img/variaveis.png" width="300" />       | Variáveis no CMD          |
 | <img src="./img/winget.png" width="300" />          | Uso do Winget             |
-| <img src="./img/cli-comparativo.png" width="300" /> | Comparativo dos terminais |
 
 
 ---
@@ -173,6 +172,10 @@ A galera que tá começando vai agradecer 🚀
 
 ---
 
-<p align="center">
-  Feito com carinho por <a href="https://github.com/cssbreno">@cssbreno</a>!
-</p>
+<div style="display: flex; justify-content: center; gap: 5px; align-items: center; margin-top: 30px;">
+  Feito com carinho por
+  <a href="https://linkedin.com/in/cssbreno" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">
+    <img src="https://user-images.githubusercontent.com/74038190/235294012-0a55e343-37ad-4b0f-924f-c8431d9d2483.gif" width="30" alt="Ícone" />
+    cssbreno
+  </a>!
+</div>
