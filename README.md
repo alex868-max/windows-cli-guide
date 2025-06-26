@@ -24,6 +24,7 @@ Claro! Aqui está o conteúdo completo já formatado como um arquivo `.md` — p
 | `systeminfo`, `date` | 🧾 Informações do sistema |
 | `shutdown`, `exit` | ❌ Desliga ou fecha terminal |
 
+
 🖼️ **Veja isso visualmente:**  
 ![CMD Comandos](./img/cmd-comandos.png)
 
@@ -37,7 +38,7 @@ Scripts `.bat` automatizam tarefas no Windows:
 @echo off
 set nome=Visitante
 echo Olá %nome%!
-````
+```
 
 💡 *Dica:* Use `IF %ERRORLEVEL% NEQ 0` para tratar erros!
 
@@ -130,8 +131,6 @@ Se você curte terminal, automação ou design técnico — contribua com melhor
 
 ---
 
-> Feito com carinho por [@cssbreno](https://github.com/cssbreno) 💛
+> Feito com carinho por [@cssbreno](https://github.com/cssbreno)
 
 ```
-
----
