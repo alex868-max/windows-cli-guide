@@ -1,5 +1,3 @@
-
-````markdown
 <h1 align="center">🖥️ Guia Interativo do CMD, PowerShell e Terminais</h1>
 
 <p align="center">Um repositório criado pra tornar o terminal menos assustador e mais divertido!<br>
@@ -177,6 +175,3 @@ A galera que tá começando vai agradecer 🚀
 <p align="center">
   Feito com carinho por <a href="https://github.com/seunome">seunome</a> 💛
 </p>
-```
-
----
