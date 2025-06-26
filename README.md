@@ -1,38 +1,46 @@
-Claro! Aqui está o conteúdo completo já formatado como um arquivo `.md` — pronto para colar direto no seu `README.md`:
-
----
 
 ````markdown
-# 🖥️ Guia Interativo do CMD, PowerShell e outros Terminais
+<h1 align="center">🖥️ Guia Interativo do CMD, PowerShell e Terminais</h1>
 
-> Um repositório criado para tornar o **terminal menos assustador** e mais divertido!  
-> Aqui você encontra comandos, scripts `.bat`, comparações entre CLIs e muito mais — com imagens, gifs e exemplos ilustrados 🧠💡
+<p align="center">Um repositório criado pra tornar o terminal menos assustador e mais divertido!<br>
+Comandos, scripts `.bat`, comparações entre CLIs e muito mais — com imagens, gifs e exemplos ilustrados 🧠💡</p>
 
 ---
 
 ## 📌 Comandos Essenciais do CMD
 
-| Comando | Descrição |
-|--------|------------|
-| `dir` | 📄 Lista arquivos e pastas |
-| `mkdir` | 📁 Cria diretório |
-| `cd` | ↔️ Navega entre pastas |
-| `tree` | 🌳 Estrutura de arquivos |
-| `type` | 📖 Lê conteúdo de arquivos |
-| `copy`, `move`, `rename` | 🛠️ Manipulação de arquivos |
-| `cls` | 🧼 Limpa tela |
-| `systeminfo`, `date` | 🧾 Informações do sistema |
-| `shutdown`, `exit` | ❌ Desliga ou fecha terminal |
+<details>
+<summary><strong>👀 Clique para expandir os principais comandos</strong></summary>
 
+```bash
+dir           # Lista arquivos
+mkdir         # Cria diretório
+cd ..         # Volta uma pasta
+tree          # Mostra estrutura
+type arquivo  # Lê conteúdo
+more arquivo  # Lê por páginas
+copy A B      # Copia
+rename A B    # Renomeia
+move A B      # Move
+del arquivo   # Apaga
+cls           # Limpa a tela
+systeminfo    # Info do sistema
+date          # Exibe/altera data
+find "txt" A  # Busca texto
+echo msg      # Exibe mensagem
+notepad       # Abre bloco de notas
+exit          # Fecha o terminal
+````
 
-🖼️ **Veja isso visualmente:**  
-![CMD Comandos](./img/cmd-comandos.png)
+</details>
+
+<p align="center">
+  <img src="./img/cmd-comandos.png" alt="Comandos CMD" width="600">
+</p>
 
 ---
 
-## 🧪 Scripts `.BAT`
-
-Scripts `.bat` automatizam tarefas no Windows:
+## 🧪 Scripts `.BAT` — Automatize com Estilo
 
 ```bat
 @echo off
@@ -40,97 +48,135 @@ set nome=Visitante
 echo Olá %nome%!
 ```
 
-💡 *Dica:* Use `IF %ERRORLEVEL% NEQ 0` para tratar erros!
-
----
-
-## 🔧 Variáveis e Interação no CMD
+### Interação com usuário:
 
 ```bat
-set /p usuario=Digite seu nome: 
+set /p usuario=Digite seu nome:
 echo Bem-vindo(a), %usuario%!
 ```
 
-🎥 Exemplo em ação:
-![Variáveis em .BAT](https://media.giphy.com/media/3o6Mbbs879ozZ9Yic0/giphy.gif)
+### Tratamento de erros:
+
+```bat
+IF %ERRORLEVEL% NEQ 0 (
+  echo Erro na execução!
+)
+```
 
 ---
 
-## 📦 Winget – O gerenciador de pacotes do Windows
+## 🔧 Variáveis no CMD
 
-```bash
-winget install -e --id <pacote>
-winget --info
+```bat
+set mensagem=Olá Mundo!
+echo %mensagem%
 ```
 
-📌 *Disponível no Windows 10+*
+💡 *Use `set /p variavel=texto` para receber input do usuário.*
+
+<p align="center">
+  <img src="https://media.giphy.com/media/3o6Mbbs879ozZ9Yic0/giphy.gif" width="400">
+</p>
+
+---
+
+## 📦 Winget – Gerenciador de Pacotes (Windows 10+)
+
+```bash
+winget install -e --id <nome>
+winget --info
+```
 
 ---
 
 ## 🍫 Chocolatey via PowerShell
 
-### 🛠 Instalação:
+### Instalação:
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force;
 iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-### Exemplos úteis:
+### Exemplos:
 
-* 📥 Instalar: `choco install nodejs`
-* 📋 Ver lista: `choco list`
-* ❌ Remover: `choco uninstall <nome>`
-
----
-
-## ⚖️ Comparativo entre Terminais
-
-| Terminal          | Sistema         | Vantagens                    |
-| ----------------- | --------------- | ---------------------------- |
-| 🐧 **Bash**       | Linux/macOS     | Scripts leves, automação     |
-| 🪟 **CMD**        | Windows         | Legado, simples              |
-| ⚡ **PowerShell**  | Win/Linux/macOS | Baseado em objetos, poderoso |
-| 🐘 **Zsh**        | Linux/macOS     | Customizável                 |
-| 🌍 **Fish**       | Linux/macOS     | Interface moderna            |
-| 🐍 **Python CLI** | Multiplataforma | Scripts avançados            |
+```bash
+choco install nodejs
+choco list
+choco uninstall nome
+```
 
 ---
 
-## 🧰 Ferramentas que facilitam sua vida
+## ⚖️ Comparativo de Terminais
 
-| Nome               | Descrição                                       |
-| ------------------ | ----------------------------------------------- |
-| `CMDer`            | Terminal mais bonito e completo                 |
-| `Windows Terminal` | Terminal com múltiplas abas (oficial Microsoft) |
-| `WSL`              | Roda Linux dentro do Windows                    |
-| `apt` + `sudo`     | Pacotes e permissões no WSL                     |
+<table>
+  <tr>
+    <th>Terminal</th><th>Sistema</th><th>Destaques</th>
+  </tr>
+  <tr>
+    <td>🐧 Bash</td><td>Linux/macOS</td><td>Scripts leves, Unix-like</td>
+  </tr>
+  <tr>
+    <td>🪟 CMD</td><td>Windows</td><td>Simples, legado</td>
+  </tr>
+  <tr>
+    <td>⚡ PowerShell</td><td>Win/macOS/Linux</td><td>Baseado em objetos, moderno</td>
+  </tr>
+  <tr>
+    <td>🐘 Zsh</td><td>Linux/macOS</td><td>Customizável com temas</td>
+  </tr>
+  <tr>
+    <td>🌊 Fish</td><td>Linux/macOS</td><td>Sintaxe intuitiva, moderna</td>
+  </tr>
+  <tr>
+    <td>🐍 Python CLI</td><td>Todos</td><td>Scripts robustos, CLI tools</td>
+  </tr>
+</table>
 
 ---
 
-## 📸 Galeria
+## 🧰 Ferramentas Recomendadas
 
-| Visualização                                  | Descrição                  |
-| --------------------------------------------- | -------------------------- |
-| ![Variáveis](./img/variaveis.png)             | Criando variáveis no CMD   |
-| ![Winget](./img/winget.png)                   | Instalando com winget      |
-| ![CLI comparativo](./img/cli-comparativo.png) | Comparação entre terminais |
+✅ **Para turbinar seu terminal**:
+
+* `CMDer` – Interface mais amigável pro CMD
+* `Windows Terminal` – Terminal oficial da Microsoft (com abas!)
+* `WSL` – Subsystem Linux no Windows
+* `apt` e `sudo` – Administração no WSL
 
 ---
 
-## 🧠 Contribua!
+## 🖼️ Galeria
 
-Se você curte terminal, automação ou design técnico — contribua com melhorias, correções ou novas artes!
+📷 Confira os visuais na [pasta de imagens](./img)
+
+| Visual                             | Descrição                 |
+| ---------------------------------- | ------------------------- |
+| ![img1](./img/variaveis.png)       | Variáveis no CMD          |
+| ![img2](./img/winget.png)          | Uso do Winget             |
+| ![img3](./img/cli-comparativo.png) | Comparativo dos terminais |
+
+---
+
+## 🤝 Contribua
+
+Gosta de terminal, automação ou design técnico?
+Contribua com melhorias, correções ou novas artes!
+A galera que tá começando vai agradecer 🚀
 
 ---
 
 ## 🌟 Curtiu?
 
-⭐ Dê uma estrela nesse repositório se esse conteúdo te ajudou!
-📣 Compartilhe com seus amigos que querem aprender CMD e automações!
+⭐ Dê uma estrela no repositório se esse conteúdo te ajudou!
+📣 Compartilhe com colegas devs que querem aprender terminal sem sofrer!
 
 ---
 
-> Feito com carinho por [@cssbreno](https://github.com/cssbreno)
-
+<p align="center">
+  Feito com carinho por <a href="https://github.com/seunome">seunome</a> 💛
+</p>
 ```
+
+---
