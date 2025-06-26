@@ -174,5 +174,7 @@ A galera que tá começando vai agradecer 🚀
 
 <div align="center">
   <p>Conecte-se comigo:</p>
-  <img src="https://user-images.githubusercontent.com/74038190/235294012-0a55e343-37ad-4b0f-924f-c8431d9d2483.gif" width="50" alt="Ícone" style="vertical-align: middle;" />
+    <a href="https://www.linkedin.com/in/cssbreno" target="_blank" rel="noopener">
+    <img src="https://user-images.githubusercontent.com/74038190/235294012-0a55e343-37ad-4b0f-924f-c8431d9d2483.gif" width="50" alt="LinkedIn"/>
+  </a>
 </div>
