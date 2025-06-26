@@ -174,7 +174,7 @@ A galera que tá começando vai agradecer 🚀
 
 <div style="display: flex; justify-content: left; gap: 5px; align-items: center; margin-top: 10px;">
   Feito com carinho por
-  <a href="https://linkedin.com/in/cssbreno" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">
+  <a href="https://linkedin.com/in/cssbreno" target="_blank" rel="noopener noreferrer">
     <img src="https://user-images.githubusercontent.com/74038190/235294012-0a55e343-37ad-4b0f-924f-c8431d9d2483.gif" width="30" alt="Ícone" />
     cssbreno
   </a>!
