@@ -33,7 +33,7 @@ exit          # Fecha o terminal
 </details>
 
 <p align="center">
-  <img src="./img/cmd-comandos.png" alt="Comandos CMD" width="600">
+  <img src="./img/cmd-comandos.png" alt="Comandos CMD" width="400">
 </p>
 
 ---
@@ -72,8 +72,8 @@ echo %mensagem%
 
 💡 *Use `set /p variavel=texto` para receber input do usuário.*
 
-<p align="center">
-  <img src="https://media.giphy.com/media/3o6Mbbs879ozZ9Yic0/giphy.gif" width="400">
+<p align="left">
+  <img src="https://user-images.githubusercontent.com/74038190/212744275-c56a72c2-50b1-45e2-a693-d19d40357766.gif" width="200">
 </p>
 
 ---
@@ -173,5 +173,5 @@ A galera que tá começando vai agradecer 🚀
 ---
 
 <p align="center">
-  Feito com carinho por <a href="https://github.com/cssbreno">cssbreno</a>!
+  Feito com carinho por <a href="https://github.com/cssbreno">@cssbreno</a>!
 </p>
