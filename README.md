@@ -1,7 +1,7 @@
 <h1 align="center">🖥️ Guia Interativo do CMD, PowerShell e Terminais</h1>
 
-<p align="center">Um repositório criado pra tornar o terminal menos assustador e mais divertido!<br>
-Comandos, scripts `.bat`, comparações entre CLIs e muito mais — com imagens, gifs e exemplos ilustrados 🧠💡</p>
+<p align="center">Um repositório criado pra tornar o terminal menos assustador e mais amigável!<br>
+Comandos, scripts `.bat`, comparações entre CLIs e uns conteúdos adicionais</p>
 
 ---
 
@@ -147,7 +147,7 @@ choco uninstall nome
 
 ## 🖼️ Galeria
 
-📷 Confira os visuais na [pasta de imagens](./img)
+📷 Confere os visuais na [pasta de imagens](./img)
 
 | Visual                             | Descrição                 |
 | --------------------------------- | ------------------------- |
@@ -159,7 +159,7 @@ choco uninstall nome
 
 ## 🤝 Contribua
 
-Gosta de terminal, automação ou design técnico?
+Gosta de mexer com CLI?
 Contribua com melhorias, correções ou novas artes!
 A galera que tá começando vai agradecer 🚀
 
@@ -167,8 +167,8 @@ A galera que tá começando vai agradecer 🚀
 
 ## 🌟 Curtiu?
 
-⭐ Dê uma estrela no repositório se esse conteúdo te ajudou!
-📣 Compartilhe com colegas devs que querem aprender terminal sem sofrer!
+⭐ Dá uma estrela no repositório se esse conteúdo te ajudou!
+📣 Compartilha com colegas devs que querem aprender terminal sem sofrer!
 
 ---
 
