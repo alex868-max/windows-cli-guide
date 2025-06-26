@@ -173,6 +173,6 @@ A galera que tá começando vai agradecer 🚀
 ---
 
 <div align="center">
-  Feito com carinho por cssbreno
-  <img src="https://user-images.githubusercontent.com/74038190/235294012-0a55e343-37ad-4b0f-924f-c8431d9d2483.gif" width="24" alt="Ícone" style="vertical-align: middle; margin-left: 4px;" />
+  <p>Conecte-se comigo:</p>
+  <img src="https://user-images.githubusercontent.com/74038190/235294012-0a55e343-37ad-4b0f-924f-c8431d9d2483.gif" width="50" alt="Ícone" style="vertical-align: middle;" />
 </div>
