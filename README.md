@@ -32,8 +32,8 @@ exit          # Fecha o terminal
 
 </details>
 
-<p align="center">
-  <img src="./img/cmd-comandos.png" alt="Comandos CMD" width="250">
+<p align="left">
+  <img src="./img/cmd-comandos.png" alt="Comandos CMD" width="400">
 </p>
 
 ---
@@ -73,7 +73,7 @@ echo %mensagem%
 💡 *Use `set /p variavel=texto` para receber input do usuário.*
 
 <p align="left">
-  <img src="https://user-images.githubusercontent.com/74038190/212744275-c56a72c2-50b1-45e2-a693-d19d40357766.gif" width="150">
+  <img src="https://user-images.githubusercontent.com/74038190/212744275-c56a72c2-50b1-45e2-a693-d19d40357766.gif" width="200">
 </p>
 
 ---
@@ -150,10 +150,11 @@ choco uninstall nome
 📷 Confira os visuais na [pasta de imagens](./img)
 
 | Visual                             | Descrição                 |
-| ---------------------------------- | ------------------------- |
-| ![img1](./img/variaveis.png)       | Variáveis no CMD          |
-| ![img2](./img/winget.png)          | Uso do Winget             |
-| ![img3](./img/cli-comparativo.png) | Comparativo dos terminais |
+| --------------------------------- | ------------------------- |
+| <img src="./img/variaveis.png" width="300" />       | Variáveis no CMD          |
+| <img src="./img/winget.png" width="300" />          | Uso do Winget             |
+| <img src="./img/cli-comparativo.png" width="300" /> | Comparativo dos terminais |
+
 
 ---
 
