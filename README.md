@@ -1,8 +1,12 @@
+Claro! Aqui está o conteúdo completo já formatado como um arquivo `.md` — pronto para colar direto no seu `README.md`:
+
+---
 
 ````markdown
 # 🖥️ Guia Interativo do CMD, PowerShell e outros Terminais
 
-> Um repositório criado para tornar o **terminal menos assustador** e mais divertido! Aqui você encontra comandos, scripts `.bat`, comparações entre CLIs e muito mais — com imagens, gifs e exemplos ilustrados 🧠💡
+> Um repositório criado para tornar o **terminal menos assustador** e mais divertido!  
+> Aqui você encontra comandos, scripts `.bat`, comparações entre CLIs e muito mais — com imagens, gifs e exemplos ilustrados 🧠💡
 
 ---
 
@@ -21,7 +25,7 @@
 | `shutdown`, `exit` | ❌ Desliga ou fecha terminal |
 
 🖼️ **Veja isso visualmente:**  
-![CMD Comandos](./img/cmd-comandos.png) <!-- substitua pelo caminho da imagem gerada -->
+![CMD Comandos](./img/cmd-comandos.png)
 
 ---
 
@@ -47,7 +51,6 @@ echo Bem-vindo(a), %usuario%!
 ```
 
 🎥 Exemplo em ação:
-
 ![Variáveis em .BAT](https://media.giphy.com/media/3o6Mbbs879ozZ9Yic0/giphy.gif)
 
 ---
@@ -65,14 +68,14 @@ winget --info
 
 ## 🍫 Chocolatey via PowerShell
 
-Instalação:
+### 🛠 Instalação:
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force;
 iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-### Exemplos:
+### Exemplos úteis:
 
 * 📥 Instalar: `choco install nodejs`
 * 📋 Ver lista: `choco list`
@@ -127,4 +130,8 @@ Se você curte terminal, automação ou design técnico — contribua com melhor
 
 ---
 
-> Feito com carinho por [@cssbreno](https://github.com/cssbreno)
+> Feito com carinho por [@cssbreno](https://github.com/cssbreno) 💛
+
+```
+
+---
