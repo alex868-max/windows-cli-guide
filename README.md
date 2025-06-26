@@ -173,5 +173,5 @@ A galera que tá começando vai agradecer 🚀
 ---
 
 <p align="center">
-  Feito com carinho por <a href="https://github.com/seunome">seunome</a> 💛
+  Feito com carinho por <a href="https://github.com/cssbreno">cssbreno</a>!
 </p>
